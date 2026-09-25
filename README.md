@@ -1,27 +1,28 @@
-import pandas as pd
+# Business Metrics Analyzer
 
+Учебный проект по дисциплине «Проектирование и разработка бизнес-ориентированного программного обеспечения».
 
-def calculate_profitability(revenue: float, cost: float) -> float:
-    """Возвращает рентабельность в процентах."""
-    if revenue == 0:
-        return 0.0
-    return (revenue - cost) / revenue * 100
+## Бизнес-задача
 
+Расчёт и визуализация ключевых показателей эффективности (KPI) предприятия.
 
-def main():
-    data = {
-        "Месяц": ["Январь", "Февраль", "Март"],
-        "Выручка": [120000, 150000, 135000],
-    }
+## Стек
 
-    df = pd.DataFrame(data)
+- Python 3.10+
+- pandas
+- matplotlib
 
-    print(df)
-    print("Средняя выручка:", df["Выручка"].mean())
+## Запуск
 
-    profitability = calculate_profitability(150000, 100000)
-    print("Рентабельность:", profitability, "%")
+python -m venv .venv
 
+.venv\Scripts\activate
 
-if __name__ == "__main__":
-    main()лександровна
+pip install -r requirements.txt
+
+python main.py
+
+## Автор
+
+Студент группы ________
+Якимовская Анастасия Александровна
